@@ -12,5 +12,5 @@ services:
     image: php:7.4-alpine
     container_name: mi_php_container
     volumes:
-      - ./html:/var/www/html
+      - ./LFI:/var/www/html
 
