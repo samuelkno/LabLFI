@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    image: php:7.4-apache
+    container_name: mi_apache_container
+    volumes:
+      - ./LFI:/var/www/html
+    ports:
+      - "8080:80"
+
+  php:
+    image: php:7.4-alpine
+    container_name: mi_php_container
+    volumes:
+      - ./html:/var/www/html
+
